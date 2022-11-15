@@ -6,6 +6,8 @@ import "../src/axelar.sol";
 
 
 // deployed addresses: https://docs.axelar.dev/dev/build/contract-addresses/mainnet
+// polygon 0x048b61cBDCCe4FB7Af2D380D604078B53D6ecC96
+// Moonbeam 0xd98e886430BE22b6ae687f097731BbD00B2D0927
 
 
 
