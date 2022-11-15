@@ -50,7 +50,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "AxelarExecutable": {
-          "0.8.9+commit.e5eed63a.Windows.msvc": "AxelarExecutable.sol\\AxelarExecutable.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "AxelarExecutable.sol\\AxelarExecutable.json"
         }
       }
     },
@@ -92,7 +92,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IAxelarExecutable": {
-          "0.8.9+commit.e5eed63a.Windows.msvc": "IAxelarExecutable.sol\\IAxelarExecutable.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "IAxelarExecutable.sol\\IAxelarExecutable.json"
         }
       }
     },
@@ -132,7 +132,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IAxelarGasService": {
-          "0.8.9+commit.e5eed63a.Windows.msvc": "IAxelarGasService.sol\\IAxelarGasService.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "IAxelarGasService.sol\\IAxelarGasService.json"
         }
       }
     },
@@ -172,7 +172,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IAxelarGateway": {
-          "0.8.9+commit.e5eed63a.Windows.msvc": "IAxelarGateway.sol\\IAxelarGateway.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "IAxelarGateway.sol\\IAxelarGateway.json"
         }
       }
     },
@@ -212,7 +212,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IERC20": {
-          "0.8.9+commit.e5eed63a.Windows.msvc": "IERC20.sol\\IERC20.json"
+          "0.8.17+commit.8df45f5f.Windows.msvc": "IERC20.sol\\IERC20.json"
         }
       }
     },
@@ -951,50 +951,10 @@
         }
       }
     },
-    "src/Counter.sol": {
-      "lastModificationDate": 1668520630052,
-      "contentHash": "ae6c800a2b4c57768024d6e9423d39e8",
-      "sourceName": "src/Counter.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [],
-      "versionRequirement": "^0.8.13",
-      "artifacts": {
-        "Counter": {
-          "0.8.17+commit.8df45f5f.Windows.msvc": "Counter.sol\\Counter.json"
-        }
-      }
-    },
-    "src/axelar.exec.sol": {
-      "lastModificationDate": 1668522283206,
-      "contentHash": "8c8cb6f89e193a2e4e2e90c2a57328a5",
-      "sourceName": "src/axelar.exec.sol",
+    "src/axelar.sol": {
+      "lastModificationDate": 1668522746243,
+      "contentHash": "1574e3ffb09d202b3743fefff8ae1673",
+      "sourceName": "src/axelar.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -1030,57 +990,17 @@
         "lib/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGateway.sol",
         "lib/axelar-gmp-sdk-solidity/contracts/interfaces/IERC20.sol"
       ],
-      "versionRequirement": "=0.8.9",
-      "artifacts": {
-        "ExecutableSample": {
-          "0.8.9+commit.e5eed63a.Windows.msvc": "axelar.exec.sol\\ExecutableSample.json"
-        }
-      }
-    },
-    "src/axelar.recv.sol": {
-      "lastModificationDate": 1668520356661,
-      "contentHash": "d41d8cd98f00b204e9800998ecf8427e",
-      "sourceName": "src/axelar.recv.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [],
       "versionRequirement": null,
       "artifacts": {
-        "axelar.recv": {
-          "0.8.17+commit.8df45f5f.Windows.msvc": "axelar.recv.sol\\axelar.recv.json"
+        "ExecutableSample": {
+          "0.8.17+commit.8df45f5f.Windows.msvc": "axelar.sol\\ExecutableSample.json"
         }
       }
     },
-    "test/Counter.t.sol": {
-      "lastModificationDate": 1668520630053,
-      "contentHash": "b1a6521ba9c61d5266bab1fc9a057d68",
-      "sourceName": "test/Counter.t.sol",
+    "test/axelar.t.sol": {
+      "lastModificationDate": 1668526245071,
+      "contentHash": "948ea33d9dc04cad1cd2948c92c24284",
+      "sourceName": "test/axelar.t.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -1110,6 +1030,11 @@
         }
       },
       "imports": [
+        "lib/axelar-gmp-sdk-solidity/contracts/executables/AxelarExecutable.sol",
+        "lib/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarExecutable.sol",
+        "lib/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGasService.sol",
+        "lib/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGateway.sol",
+        "lib/axelar-gmp-sdk-solidity/contracts/interfaces/IERC20.sol",
         "lib/forge-std/lib/ds-test/src\\test.sol",
         "lib/forge-std/src/Common.sol",
         "lib/forge-std/src/Components.sol",
@@ -1124,12 +1049,12 @@
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
-        "src\\Counter.sol"
+        "src\\axelar.sol"
       ],
-      "versionRequirement": "^0.8.13",
+      "versionRequirement": null,
       "artifacts": {
-        "CounterTest": {
-          "0.8.17+commit.8df45f5f.Windows.msvc": "Counter.t.sol\\CounterTest.json"
+        "axelarTest": {
+          "0.8.17+commit.8df45f5f.Windows.msvc": "axelar.t.sol\\axelarTest.json"
         }
       }
     }
